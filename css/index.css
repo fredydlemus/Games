@@ -98,4 +98,64 @@ main {
   }
 }
 
+.footer--principal {
+  display: flex;
+  height: 160px;
+  margin-top: 30px;
+  padding: 0 20px 20px 20px;
+  background-color: #333333;
+}
+.footer--principal .logo {
+  display: flex;
+  align-items: center;
+}
+.footer--principal .logo img {
+  width: 80px;
+  height: 80px;
+}
+.footer--principal .logo span {
+  color: #8841da;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin-left: 10px;
+}
+
+.nav--footer ul {
+  display: flex;
+  padding-top: 35px;
+}
+.nav--footer ul li {
+  list-style: none;
+  margin-right: 50px;
+}
+.nav--footer ul a {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav--social {
+  margin-left: auto;
+}
+.nav--social ul {
+  display: flex;
+  padding-top: 35px;
+}
+.nav--social li {
+  list-style: none;
+  margin-right: 50px;
+  color: #fff;
+}
+.nav--social a {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=index.css.map */

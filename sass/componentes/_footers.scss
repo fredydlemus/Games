@@ -1,0 +1,51 @@
+.footer--principal {
+  display: flex;
+  height: 160px;
+  margin-top: 30px;
+  padding: 0 20px 20px 20px;
+  background-color: $color-primario;
+  & .logo {
+    display: flex;
+    align-items: center;
+  }
+  & .logo img {
+    width: 80px;
+    height: 80px;
+  }
+  & .logo span {
+    color: $color-secundario;
+    @include titulos($Fuente2);
+    @include font-size(24px);
+    margin-left: 10px;
+  }
+}
+
+.nav--footer ul {
+  display: flex;
+  padding-top: 35px;
+  li {
+    list-style: none;
+    margin-right: 50px;
+  }
+  a {
+    color: $color-claro;
+    @include titulos($Fuente2);
+  }
+}
+
+.nav--social {
+  margin-left: auto;
+  ul {
+    display: flex;
+    padding-top: 35px;
+  }
+  li {
+    list-style: none;
+    margin-right: 50px;
+    color: $color-claro;
+  }
+  a {
+    color: $color-claro;
+    @include titulos($Fuente2);
+  }
+}

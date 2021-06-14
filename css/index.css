@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f9fafc;
+  color: #333333;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Media Queries Mixin **********************/
+.header--principal {
+  display: flex;
+  padding: 0 20px 20px 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #ebebeb;
+  justify-content: space-between;
+}
+.header--principal .logo {
+  display: flex;
+  align-items: center;
+}
+.header--principal .logo img {
+  width: 80px;
+  height: 80px;
+}
+.header--principal .logo span {
+  color: #8841da;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin-left: 10px;
+}
+
+.nav--header ul {
+  display: none;
+  padding-top: 35px;
+}
+.nav--header ul li {
+  list-style: none;
+  margin-right: 50px;
+}
+.nav--header ul a {
+  text-decoration: none;
+  color: #3f579a;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.nav--header ul a:hover {
+  text-decoration: underline;
+}
+@media only screen and (min-width: 992px) {
+  .nav--header ul {
+    display: flex;
+  }
+}
+
+.header__busqueda {
+  display: none;
+  text-decoration: none;
+  padding-top: 35px;
+}
+.header__busqueda:hover {
+  text-decoration: none;
+}
+.header__busqueda i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #8841da;
+}
+.header__busqueda span {
+  color: #3f579a;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media only screen and (min-width: 992px) {
+  .header__busqueda {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -6,6 +6,7 @@
   height: 90px;
   border-bottom: 1px solid #ebebeb;
   justify-content: space-between;
+  align-items: center;
   & .logo {
     display: flex;
     align-items: center;
@@ -24,7 +25,7 @@
 
 .nav--header ul {
   display: none;
-  padding-top: 35px;
+
   li {
     list-style: none;
     margin-right: 50px;
@@ -43,9 +44,9 @@
 }
 
 .header__busqueda {
-  display: none;
+  // display: none;
   text-decoration: none;
-  padding-top: 35px;
+
   &:hover {
     text-decoration: none;
   }
@@ -58,7 +59,7 @@
     color: $color-variacion;
     @include titulos($Fuente2);
   }
-  @include media(desktop-s) {
-    display: flex;
-  }
+  // @include media(desktop-s) {
+  //   display: flex;
+  // }
 }

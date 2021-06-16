@@ -1,0 +1,28 @@
+.contenedor--cajas {
+  width: 100%;
+}
+
+.caja {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+  &__imagen {
+    width: 100%;
+    margin-bottom: 5px;
+    img {
+      width: 100%;
+    }
+  }
+  &__categoria {
+    @include titulos($Fuente2);
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  h3 {
+    @extend p;
+  }
+}

@@ -1,0 +1,18 @@
+.articulo--principal {
+  width: 100%;
+  &__intro {
+    width: 80%;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+  p {
+    @extend .articulo--principal__intro;
+  }
+  h3 {
+    @extend .articulo--principal__intro;
+  }
+  h2 {
+    @extend .articulo--principal__intro;
+    margin-bottom: 20px;
+  }
+}

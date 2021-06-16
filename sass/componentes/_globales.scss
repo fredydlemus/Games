@@ -5,6 +5,11 @@ $color-secundario: #8841da;
 $color-variacion: #3f579a;
 $color-claro: #fff;
 
+@mixin caja {
+  color: $color-primario;
+  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.2);
+}
+
 @mixin titulos($fuente) {
   @if $fuente == $Fuente1 {
     font-family: $Fuente1;

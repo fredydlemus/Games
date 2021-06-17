@@ -20,6 +20,10 @@ $color-claro: #fff;
   }
 }
 
+@function get-opacity($color, $amount) {
+  @return rgba($color, $amount);
+}
+
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);

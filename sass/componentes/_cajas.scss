@@ -1,5 +1,11 @@
 .contenedor--cajas {
   width: 100%;
+  @include media(tablet) {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 2.5%;
+  }
 }
 
 .caja {

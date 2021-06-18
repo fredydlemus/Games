@@ -230,6 +230,128 @@ main {
 .caja p, .caja h3 {
   margin-bottom: 20px;
 }
+.perfil--section {
+  width: 100%;
+}
+
+.perfil {
+  width: 100%;
+  text-align: center;
+  background-color: #8841da;
+  padding-top: 50px;
+  color: #fff;
+}
+.perfil__avatar {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50rem;
+}
+.perfil__nombre, .perfil__minibio h2 {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.perfil__titulo, .perfil__minibio h3 {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.perfil__boton {
+  display: block;
+  width: 100px;
+  height: 40px;
+  margin: 15px auto;
+  padding-top: 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.perfil__minibio {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.estadistica--perfil {
+  display: flex;
+  width: 50%;
+  height: 80px;
+  padding-top: 15px;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #333333;
+  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.2);
+}
+.estadistica--perfil h3 {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.estadistica--perfil span {
+  font-size: 12px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.5);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.estadistica--articulos {
+  height: 70px;
+  padding: 20px;
+  border-top: 1px solid #e9e9e9;
+}
+.estadistica--articulos ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
+.estadistica--articulos li {
+  list-style: none;
+  color: rgba(51, 51, 51, 0.2);
+}
+.estadistica--articulos span {
+  margin-left: 10px;
+}
+
+.caja--con-fondo__stats {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+  border-top: none;
+  text-align: center;
+}
+.caja--con-fondo__stats ul {
+  display: flex;
+}
+.caja--con-fondo__stats li {
+  display: flex;
+  margin-right: 50px;
+  opacity: 0.8;
+}
+.caja--con-fondo__stats i {
+  color: #fff;
+}
+.caja--con-fondo__stats span {
+  color: #fff;
+}
+
 .footer--principal {
   display: flex;
   align-items: center;

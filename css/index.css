@@ -284,9 +284,9 @@ main {
 }
 .estadistica--perfil {
   display: flex;
-  width: 50%;
+  width: 60%;
   height: 80px;
-  padding-top: 15px;
+  align-items: center;
   margin: 0 auto;
   justify-content: space-between;
   border-radius: 20px;
@@ -309,6 +309,10 @@ main {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.estadistica_elemento {
+  padding: 10px;
 }
 
 .estadistica--articulos {
@@ -350,6 +354,40 @@ main {
 }
 .caja--con-fondo__stats span {
   color: #fff;
+}
+
+.Ubicacion--perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 80px;
+  border-radius: 20px;
+  margin: 30px auto 0 auto;
+  background-color: #fff;
+  color: #333333;
+  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.2);
+}
+.Ubicacion--perfil i {
+  display: block;
+  float: left;
+  padding-left: 10px;
+  font-size: 40px;
+  color: #3f579a;
+}
+.Ubicacion--perfil h2 {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.Ubicacion--perfil h3 {
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.5);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .footer--principal {

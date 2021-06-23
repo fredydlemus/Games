@@ -1,0 +1,33 @@
+.encabezado--con-filtros {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 90px 0;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 40px;
+    @include titulos($Fuente2);
+    max-width: 400px;
+  }
+  .filtros {
+    width: 250px;
+    height: auto;
+
+    padding: 20px;
+    @include caja;
+    span {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      @include titulos($Fuente2);
+    }
+    a {
+      color: #ccc;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  }
+}

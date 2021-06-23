@@ -1,5 +1,9 @@
 .perfil--section {
   width: 100%;
+  @include media(desktop-s) {
+    display: flex;
+    margin-right: 20px;
+  }
 }
 
 .perfil {
@@ -7,6 +11,7 @@
   text-align: center;
   background-color: $color-secundario;
   padding-top: 50px;
+  padding-bottom: 10px;
   color: $color-claro;
   &__avatar {
     display: block;
@@ -39,6 +44,9 @@
     @include titulos($Fuente2);
     border: 2px solid get-opacity($color-claro, 0.3);
     background-color: get-opacity(#000, 0.1);
+  }
+  @include media(desktop-s) {
+    margin-right: 30px;
   }
 }
 

@@ -16,3 +16,31 @@
     margin-bottom: 20px;
   }
 }
+
+.articulos {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.articulo {
+  margin-bottom: 50px;
+  border-bottom: 3px solid $color-secundario;
+  &__categoria {
+    font-weight: 500;
+    font-size: 14px;
+    color: $color-secundario;
+    @include titulos($Fuente2);
+  }
+  &__titulo {
+    font-size: 20px;
+    color: $color-primario;
+    @include titulos($Fuente2);
+  }
+  &__descripcion {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    padding-right: 100px;
+  }
+}

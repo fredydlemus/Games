@@ -1,12 +1,13 @@
 .estadistica--perfil {
   display: flex;
-  width: 60%;
+
   height: 80px;
   align-items: center;
   margin: 0 auto;
   justify-content: space-between;
   border-radius: 20px;
   background-color: $color-claro;
+  max-width: 300px;
   @include caja;
   h3 {
     font-weight: 600;

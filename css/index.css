@@ -22,6 +22,7 @@ main {
 /* Media Queries Mixin **********************/
 .header--principal {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 20px 20px 20px;
   margin-bottom: 20px;
   width: 100%;
@@ -48,13 +49,26 @@ main {
   line-height: 2.25rem;
   margin-left: 10px;
 }
+@media only screen and (min-width: 768px) {
+  .header--principal .logo {
+    order: 1;
+  }
+  .header--principal .header__busqueda {
+    order: 3;
+  }
+  .header--principal .nav--header {
+    order: 2;
+  }
+}
 
 .nav--header ul {
-  display: none;
+  display: flex;
+  width: 100%;
 }
 .nav--header ul li {
   list-style: none;
-  margin-right: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .nav--header ul a {
   text-decoration: none;
@@ -69,6 +83,9 @@ main {
 @media only screen and (min-width: 992px) {
   .nav--header ul {
     display: flex;
+  }
+  .nav--header ul li {
+    margin-right: 50px;
   }
 }
 
@@ -505,7 +522,7 @@ main {
 }
 .encabezado--con-filtros h2 {
   margin-top: 10px;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 40px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;

@@ -1,5 +1,6 @@
 .header--principal {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 20px 20px 20px;
   margin-bottom: 20px;
   width: 100%;
@@ -21,14 +22,27 @@
     @include font-size(24px);
     margin-left: 10px;
   }
+  @include media(tablet) {
+    & .logo {
+      order: 1;
+    }
+    .header__busqueda {
+      order: 3;
+    }
+    .nav--header {
+      order: 2;
+    }
+  }
 }
 
 .nav--header ul {
-  display: none;
+  display: flex;
+  width: 100%;
 
   li {
     list-style: none;
-    margin-right: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   a {
     text-decoration: none;
@@ -38,8 +52,12 @@
       text-decoration: underline;
     }
   }
+
   @include media(desktop-s) {
     display: flex;
+    li {
+      margin-right: 50px;
+    }
   }
 }
 

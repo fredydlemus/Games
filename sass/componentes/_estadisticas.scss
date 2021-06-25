@@ -52,12 +52,14 @@
   bottom: 10px;
   border-top: none;
   text-align: center;
+  width: 100%;
   ul {
     display: flex;
+    justify-content: space-around;
   }
   li {
     display: flex;
-    margin-right: 50px;
+
     opacity: 0.8;
   }
   i {

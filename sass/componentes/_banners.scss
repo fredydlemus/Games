@@ -1,0 +1,14 @@
+.banner--homepage {
+  height: 250px;
+  background-color: $color-secundario;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 5px;
+  color: $color-claro;
+  p {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+}

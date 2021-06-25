@@ -34,21 +34,28 @@
 }
 
 .caja--con-fondo {
-  display: block;
+  display: flex;
+  justify-content: center;
   box-shadow: none;
   position: relative;
   overflow: hidden;
   background-color: $color-primario;
+  border-radius: 20px;
+  margin: 5px;
+  height: 250px;
   img {
     display: block;
     max-width: 100%;
     max-height: auto;
     position: absolute;
-    opacity: 0.5;
-    object-fit: contain;
+    opacity: 0.3;
+    object-fit: cover;
+    height: 100%;
   }
   &__contenido {
+    display: block;
     padding: 20px;
+    margin-bottom: 10px;
     position: absolute;
     text-align: center;
     color: $color-claro;
@@ -61,12 +68,14 @@
   }
   &__categoria {
     display: block;
+
     width: auto;
     max-width: 100px;
     margin: 0 auto;
     text-align: center;
     background-color: $color-secundario;
     color: $color-claro;
+    margin-bottom: 10px;
     @include titulos($Fuente2);
   }
 }

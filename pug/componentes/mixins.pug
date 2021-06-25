@@ -38,3 +38,45 @@ mixin estadistica
         li 
             i.fas.fa-comment-alt 
             span 12
+
+mixin caja--con-fondo-grande (imagen, categoria, titulo, contenido )
+    a(class="caja--con-fondo caja--grande")
+        .caja__imagen: img(src="../images/" +imagen)
+        .caja--con-fondo__contenido 
+            span.caja--con-fondo__categoria=categoria 
+            h2=titulo 
+            p=contenido 
+        +estadistica--caja-con-fondo 
+
+mixin caja--con-fondo-mediana (clase, imagen, categoria, titulo, contenido)
+    a(class="caja--con-fondo caja--mediana " + clase)
+        .caja__imagen: img(src="../images/"+imagen)
+        .caja--con-fondo__categoria=categoria 
+            span.caja--con-fondo__categoria=categoria 
+            h2=titulo 
+        +estadistica--caja-con-fondo
+
+mixin caja--con-fondo-pequena (clase, imagen, categoria, titulo, contenido)
+    a(class="caja--con-fondo caja--pequena " + clase)
+        .caja__imagen: img(src="../images/"+imagen)
+        .caja--con-fondo__contenido 
+            span.caja--con-fondo__categoria=categoria 
+            h2=titulo 
+        +estadistica--caja-con-fondo
+
+mixin estadistica--caja-con-fondo 
+    .caja--con-fondo__stats: ul 
+        li 
+            i.fas.fa-share 
+            span 275
+        li 
+            i.fas.fa-eye 
+            span 275
+        li 
+            i.fas.fa-comment-alt 
+            span 12
+
+mixin listado-categoria(numero, titulo)
+    li: a(href="#")
+        span.sidebar--listado__numero=numero 
+        span.sidebar--listado__titulo=titulo

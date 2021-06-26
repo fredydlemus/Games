@@ -1,0 +1,34 @@
+.sidebar--listado {
+  display: none;
+  @include media(desktop-s) {
+    display: block;
+    grid-row: 5 / 9;
+    grid-column: 1/ 2;
+    padding: 20px;
+    @include caja();
+    margin: 10px;
+    h3 {
+      @include font-size(20px);
+      @include titulos($Fuente2);
+    }
+    li {
+      padding: 10px 0;
+      margin: 10px 0;
+      border-top: 1px solid #ccc;
+      list-style: none;
+    }
+    a {
+      display: flex;
+      padding: 10px 20px;
+      color: $color-primario;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    &__numero {
+      margin-right: 20px;
+      color: get-opacity($color-primario, 0.5);
+    }
+  }
+}

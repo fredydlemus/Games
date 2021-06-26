@@ -15,7 +15,12 @@
   border-radius: 10px;
   padding: 5px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   &__imagen {
+    height: 65%;
     width: 100%;
     margin-bottom: 5px;
     img {
@@ -25,11 +30,17 @@
   &__categoria {
     @include titulos($Fuente2);
   }
-  p {
-    margin-bottom: 20px;
-  }
-  h3 {
-    @extend p;
+  // p {
+  //   margin-bottom: 20px;
+  // }
+  // h3 {
+  //   @extend p;
+  // }
+  &__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
   }
 }
 
@@ -84,11 +95,67 @@
   h2 {
     @include titulos($Fuente2);
     @include font-size(20px);
+    margin: 10px;
   }
   p {
     display: none;
   }
   .caja--con-fondo__contenido {
     padding-top: 25px;
+    @include media(desktop-s) {
+      padding-top: 100px;
+    }
+  }
+  @include media(tablet) {
+    p {
+      display: block;
+    }
+  }
+  @include media(desktop-s) {
+    height: 500px;
+    border-radius: 0px;
+    margin: 10px;
+
+    h2 {
+      @include font-size(50px);
+    }
+  }
+}
+
+.caja--mediana {
+  h2 {
+    @include titulos($Fuente2);
+    @include font-size(16px);
+  }
+  .caja--con-fondo__contenido {
+    @include media(desktop-s) {
+      h2 {
+        font-size: 25px;
+      }
+    }
+  }
+  @include media(desktop-s) {
+    // height: 500px;
+    border-radius: 0px;
+    margin: 10px;
+  }
+}
+
+.caja--pequena {
+  h2 {
+    @include titulos($Fuente2);
+    @include font-size(18px);
+  }
+  .caja--con-fondo__contenido {
+    @include media(desktop-s) {
+      h2 {
+        font-size: 25px;
+      }
+    }
+  }
+  @include media(desktop-s) {
+    // height: 500px;
+    border-radius: 0px;
+    margin: 10px;
   }
 }

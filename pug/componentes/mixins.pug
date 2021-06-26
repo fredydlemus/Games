@@ -51,7 +51,7 @@ mixin caja--con-fondo-grande (imagen, categoria, titulo, contenido )
 mixin caja--con-fondo-mediana (clase, imagen, categoria, titulo, contenido)
     a(class="caja--con-fondo caja--mediana " + clase)
         .caja__imagen: img(src="../images/"+imagen)
-        .caja--con-fondo__categoria=categoria 
+        .caja--con-fondo__contenido 
             span.caja--con-fondo__categoria=categoria 
             h2=titulo 
         +estadistica--caja-con-fondo

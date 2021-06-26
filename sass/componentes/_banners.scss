@@ -5,10 +5,41 @@
   padding: 20px;
   margin: 5px;
   color: $color-claro;
+  h3 {
+    margin: 10px;
+    @include titulos($Fuente2);
+    @include font-size(18px);
+  }
   p {
     display: none;
   }
   .button {
     display: none;
+  }
+  @include media(tablet) {
+    p {
+      display: block;
+      margin-bottom: 70px;
+    }
+  }
+  @include media(desktop-s) {
+    margin: 10px;
+    border-radius: 0px;
+    height: auto;
+    padding: 35px;
+    h3 {
+      margin: 0;
+    }
+    .button {
+      display: initial;
+      padding: 10px;
+      height: 50px;
+      border: 2px solid $color-claro;
+      @include font-size(18px);
+      @include titulos($Fuente2);
+    }
+    .button:hover {
+      cursor: pointer;
+    }
   }
 }

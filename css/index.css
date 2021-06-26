@@ -37,14 +37,14 @@ main {
   font-size: 1.125rem;
   line-height: 1.6875rem;
 }
-.banner--homepage p {
+.banner--homepage p, .banner--homepage .caja h3, .caja .banner--homepage h3 {
   display: none;
 }
 .banner--homepage .button {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  .banner--homepage p {
+  .banner--homepage p, .banner--homepage .caja h3, .caja .banner--homepage h3 {
     display: block;
     margin-bottom: 70px;
   }
@@ -442,7 +442,6 @@ main {
 }
 
 .caja {
-  width: 90%;
   margin: 0 auto;
   border: 1px solid gray;
   border-radius: 10px;
@@ -451,9 +450,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 90%;
 }
 .caja__imagen {
-  height: 65%;
   width: 100%;
   margin-bottom: 5px;
 }
@@ -465,11 +464,13 @@ main {
   text-transform: uppercase;
   font-weight: 700;
 }
-.caja__contenido {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 30%;
+.caja p, .caja h3 {
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 992px) {
+  .caja {
+    max-width: 31%;
+  }
 }
 
 .caja--con-fondo {
@@ -500,7 +501,7 @@ main {
   text-align: center;
   color: #fff;
 }
-.caja--con-fondo__contenido p {
+.caja--con-fondo__contenido p, .caja--con-fondo__contenido .caja h3, .caja .caja--con-fondo__contenido h3 {
   color: #fff;
 }
 .caja--con-fondo__contenido h3 {
@@ -529,7 +530,7 @@ main {
   line-height: 1.875rem;
   margin: 10px;
 }
-.caja--grande p {
+.caja--grande p, .caja--grande .caja h3, .caja .caja--grande h3 {
   display: none;
 }
 .caja--grande .caja--con-fondo__contenido {
@@ -541,7 +542,7 @@ main {
   }
 }
 @media only screen and (min-width: 768px) {
-  .caja--grande p {
+  .caja--grande p, .caja--grande .caja h3, .caja .caja--grande h3 {
     display: block;
   }
 }
